@@ -1,0 +1,38 @@
+@import "generales";
+
+footer {
+  background-color: $colorSalmonFuerte;
+  @include flex-center(column);
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .footer__iconos {
+    i {
+      width: 40px;
+      height: 40px;
+      /*       background-color: gray; */
+      font-size: 30px;
+      color: white;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 5px;
+      margin-left: 10px;
+    }
+    .face {
+      background-color: $face;
+    }
+    .insta {
+      background-color: $insta;
+    }
+    .whats {
+      background-color: $whats;
+    }
+    .tiktok {
+      background-image: linear-gradient($tiktok);
+    }
+  }
+}

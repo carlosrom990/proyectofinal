@@ -1,0 +1,67 @@
+.contacto {
+  @include flex-alingn(column);
+  .contacto__links {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    border-bottom: solid 1px rgb(156, 156, 156);
+    h2 {
+      display: inline-block;
+    }
+    p {
+      display: inline-block;
+    }
+    .contacto__redes {
+      @include flex-center(row);
+      a {
+        margin-bottom: 30px;
+        i {
+          width: 40px;
+          line-height: 40px;
+          text-align: center;
+          font-size: 30px;
+          color: white;
+          margin-right: 10px;
+          border-radius: 5px;
+          margin-bottom: 10px;
+        }
+        .face {
+          background-color: $face;
+        }
+        .insta {
+          background-color: $insta;
+        }
+        .whats {
+          background-color: $whats;
+        }
+        .tiktok {
+          background-image: linear-gradient($tiktok);
+        }
+      }
+    }
+  }
+  .contacto__form {
+    margin-top: 30px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      input {
+        margin-bottom: 5px;
+        max-width: 300px;
+        height: 40px;
+      }
+      .botonContacto {
+        @include boton;
+        display: inline-block;
+        margin: 10px 0 10px 0;
+      }
+    }
+  }
+}

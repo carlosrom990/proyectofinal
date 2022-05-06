@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$colorSalmonFuerte: rgb(254, 200, 154);
+$colorSalmonClaro: rgb(245, 222, 202);
+$colorGrisOscuro: rgba(0, 0, 0, 0.342);
+$face: #3b5999;
+$insta: #e4405f;
+$tiktok: #25f4ee, #fe2c55;
+$whats: #47c856;
+
+@mixin flex-center($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+}
+@mixin flex-alingn($direction) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+}
+@mixin boton {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  padding: 10px;
+  border: solid 1px transparent;
+  border-radius: 10px;
+  background-color: $colorSalmonClaro;
+  font-weight: bold;
+}
+.subtitulo {
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+nav {
+  background-color: $colorSalmonFuerte;
+}

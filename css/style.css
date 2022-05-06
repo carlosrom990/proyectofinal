@@ -147,6 +147,25 @@ nav {
   width: 55%;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.subtitulo {
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+nav {
+  background-color: rgb(254, 200, 154);
+}
+
 footer {
   background-color: rgb(254, 200, 154);
   display: flex;
@@ -163,13 +182,110 @@ footer h2 {
 footer .footer__iconos i {
   width: 40px;
   height: 40px;
-  background-color: gray;
+  /*       background-color: gray; */
   font-size: 30px;
   color: white;
   text-align: center;
   line-height: 40px;
   border-radius: 5px;
   margin-left: 10px;
+}
+footer .footer__iconos .face {
+  background-color: #3b5999;
+}
+footer .footer__iconos .insta {
+  background-color: #e4405f;
+}
+footer .footer__iconos .whats {
+  background-color: #47c856;
+}
+footer .footer__iconos .tiktok {
+  background-image: linear-gradient(#25f4ee, #fe2c55);
+}
+
+.accordion-item {
+  background-color: rgb(245, 222, 202);
+}
+.accordion-item .accordion-header .accordion-button {
+  background-color: rgb(254, 200, 154);
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacto .contacto__links {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: solid 1px rgb(156, 156, 156);
+}
+.contacto .contacto__links h2 {
+  display: inline-block;
+}
+.contacto .contacto__links p {
+  display: inline-block;
+}
+.contacto .contacto__links .contacto__redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.contacto .contacto__links .contacto__redes a {
+  margin-bottom: 30px;
+}
+.contacto .contacto__links .contacto__redes a i {
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  margin-right: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.contacto .contacto__links .contacto__redes a .face {
+  background-color: #3b5999;
+}
+.contacto .contacto__links .contacto__redes a .insta {
+  background-color: #e4405f;
+}
+.contacto .contacto__links .contacto__redes a .whats {
+  background-color: #47c856;
+}
+.contacto .contacto__links .contacto__redes a .tiktok {
+  background-image: linear-gradient(#25f4ee, #fe2c55);
+}
+.contacto .contacto__form {
+  margin-top: 30px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contacto .contacto__form form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contacto .contacto__form form input {
+  margin-bottom: 5px;
+  max-width: 300px;
+  height: 40px;
+}
+.contacto .contacto__form form .botonContacto {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  padding: 10px;
+  border: solid 1px transparent;
+  border-radius: 10px;
+  background-color: rgb(245, 222, 202);
+  font-weight: bold;
+  display: inline-block;
+  margin: 10px 0 10px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
