@@ -18,6 +18,7 @@
     }
   }
   .novedades {
+    overflow: hidden;
     .novedades__tarjetas {
       width: 100%;
     }
@@ -31,6 +32,7 @@
     }
   }
   .catalogo {
+    overflow: hidden;
     .catalogo__tarjetas {
       width: 100%;
     }

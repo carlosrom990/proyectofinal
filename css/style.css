@@ -81,6 +81,7 @@ nav {
   border: solid 1px black;
   border-radius: 2rem;
   width: 20%;
+  height: 390px;
   margin: 5px 20px;
   position: relative;
   padding-bottom: 20px;
@@ -396,6 +397,9 @@ footer .footer__iconos .tiktok {
     margin-bottom: 30px;
   }
 
+  .novedades {
+    overflow: hidden;
+  }
   .novedades .novedades__tarjetas {
     width: 100%;
   }
@@ -407,6 +411,9 @@ footer .footer__iconos .tiktok {
     text-align: center;
   }
 
+  .catalogo {
+    overflow: hidden;
+  }
   .catalogo .catalogo__tarjetas {
     width: 100%;
   }
