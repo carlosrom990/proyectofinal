@@ -1,0 +1,63 @@
+.cata__list {
+  list-style: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 20px;
+  li {
+    display: inline;
+    margin: 5px;
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+  }
+}
+.catalogo {
+  width: 90%;
+  overflow: scroll;
+  margin: 10px auto;
+  .catalogo__tarjetas {
+    width: 400%;
+    @include flex-center(row);
+    .catalogo__tarjeta--gral {
+      border: solid 1px black;
+      border-radius: 2rem;
+      width: 25%;
+      margin: 5px 20px;
+      position: relative;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      @include flex-center(column);
+      img {
+        width: 60%;
+        margin: 0 auto;
+      }
+      .catalogo__tarjeta--cuerpo {
+        text-align: center;
+        a {
+          @include boton;
+        }
+      }
+      .catalogo__tarjeta--botones {
+        @include flex-center(column);
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        i {
+          display: inline-block;
+          font-size: 25px;
+          color: white;
+          background-color: gray;
+          border-radius: 10px;
+          width: 40px;
+          height: 40px;
+          margin: 10px;
+          padding-top: 6px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

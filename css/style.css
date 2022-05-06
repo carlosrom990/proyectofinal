@@ -288,4 +288,82 @@ footer .footer__iconos .tiktok {
   margin: 10px 0 10px 0;
 }
 
+.cata__list {
+  list-style: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 20px;
+}
+.cata__list li {
+  display: inline;
+  margin: 5px;
+}
+.cata__list li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.catalogo {
+  width: 90%;
+  overflow: scroll;
+  margin: 10px auto;
+}
+.catalogo .catalogo__tarjetas {
+  width: 400%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.catalogo .catalogo__tarjetas .catalogo__tarjeta--gral {
+  border: solid 1px black;
+  border-radius: 2rem;
+  width: 25%;
+  margin: 5px 20px;
+  position: relative;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.catalogo .catalogo__tarjetas .catalogo__tarjeta--gral img {
+  width: 60%;
+  margin: 0 auto;
+}
+.catalogo .catalogo__tarjetas .catalogo__tarjeta--gral .catalogo__tarjeta--cuerpo {
+  text-align: center;
+}
+.catalogo .catalogo__tarjetas .catalogo__tarjeta--gral .catalogo__tarjeta--cuerpo a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  padding: 10px;
+  border: solid 1px transparent;
+  border-radius: 10px;
+  background-color: rgb(245, 222, 202);
+  font-weight: bold;
+}
+.catalogo .catalogo__tarjetas .catalogo__tarjeta--gral .catalogo__tarjeta--botones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.catalogo .catalogo__tarjetas .catalogo__tarjeta--gral .catalogo__tarjeta--botones i {
+  display: inline-block;
+  font-size: 25px;
+  color: white;
+  background-color: gray;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  padding-top: 6px;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
