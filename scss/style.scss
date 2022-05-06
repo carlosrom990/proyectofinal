@@ -4,3 +4,47 @@
 @import "preguntas";
 @import "contacto";
 @import "catalogo";
+
+@media screen and (min-width: 992px) {
+  .banner {
+    .banner1 {
+      display: none;
+    }
+    .banner2 {
+      display: inline-block;
+      width: 100%;
+      border-radius: 20px;
+      margin-bottom: 30px;
+    }
+  }
+  .novedades {
+    .novedades__tarjetas {
+      width: 100%;
+    }
+  }
+  .comentariosGral {
+    .cajacomentario {
+      width: 22%;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  .catalogo {
+    .catalogo__tarjetas {
+      width: 100%;
+    }
+  }
+  .contacto {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 90%;
+    h2 {
+      margin-top: 30px;
+    }
+    .contacto__links {
+      border-bottom: 0;
+    }
+  }
+}
