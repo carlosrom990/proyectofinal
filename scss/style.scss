@@ -19,6 +19,7 @@
   }
   .novedades {
     overflow: hidden;
+    max-width: 100%;
     .novedades__tarjetas {
       width: 100%;
     }
@@ -33,10 +34,31 @@
   }
   .catalogo {
     overflow: hidden;
+    max-width: 100%;
     .catalogo__tarjetas {
       width: 100%;
+      .catalogo__tarjeta--gral {
+        overflow: hidden;
+        .comprar {
+          transform: translateY(300%);
+          transition: 1s;
+        }
+        .catalogo__tarjeta--botones {
+          transform: translateX(100%);
+          transition: 1s;
+        }
+      }
+    }
+    .catalogo__tarjeta--gral:hover .comprar {
+      transform: translateY(0);
+      transition: 1s;
+    }
+    .catalogo__tarjeta--gral:hover .catalogo__tarjeta--botones {
+      transform: translateX(0);
+      transition: 1s;
     }
   }
+
   .contacto {
     flex-direction: row;
     justify-content: flex-start;
@@ -47,6 +69,43 @@
     }
     .contacto__links {
       border-bottom: 0;
+    }
+  }
+  footer {
+    .footer__iconos {
+      .face {
+        background-color: gray;
+      }
+      .insta {
+        background-color: gray;
+      }
+      .whats {
+        background-color: gray;
+      }
+      .tiktok {
+        background-image: none;
+        background-color: gray;
+      }
+    }
+    :hover a {
+      filter: blur(2px);
+      transition: 1s;
+    }
+    a:hover {
+      transform: translateY(-3px) scale(1.5);
+      filter: none;
+    }
+    .face:hover {
+      background-color: $face;
+    }
+    .insta:hover {
+      background-color: $insta;
+    }
+    .whats:hover {
+      background-color: $whats;
+    }
+    .tiktok:hover {
+      background-image: linear-gradient($tiktok);
     }
   }
 }

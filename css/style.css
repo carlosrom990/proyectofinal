@@ -68,6 +68,7 @@ nav {
 
 .novedades {
   width: 90%;
+  max-width: 600px;
   overflow: scroll;
   margin: 10px auto;
 }
@@ -81,7 +82,6 @@ nav {
   border: solid 1px black;
   border-radius: 2rem;
   width: 20%;
-  height: 390px;
   margin: 5px 20px;
   position: relative;
   padding-bottom: 20px;
@@ -134,7 +134,9 @@ nav {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .comentariosGral .cajacomentario {
   width: 90%;
@@ -326,6 +328,7 @@ footer .footer__iconos .tiktok {
 
 .catalogo {
   width: 90%;
+  max-width: 600px;
   overflow: scroll;
   margin: 10px auto;
 }
@@ -345,16 +348,9 @@ footer .footer__iconos .tiktok {
   padding-top: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
-.catalogo .catalogo__tarjetas .catalogo__tarjeta--gral img {
-  width: 60%;
-  margin: 0 auto;
-}
-.catalogo .catalogo__tarjetas .catalogo__tarjeta--gral .catalogo__tarjeta--cuerpo {
-  text-align: center;
-}
-.catalogo .catalogo__tarjetas .catalogo__tarjeta--gral .catalogo__tarjeta--cuerpo a {
+.catalogo .catalogo__tarjetas .catalogo__tarjeta--gral .comprar a {
   text-decoration: none;
   text-transform: uppercase;
   color: black;
@@ -363,6 +359,16 @@ footer .footer__iconos .tiktok {
   border-radius: 10px;
   background-color: rgb(245, 222, 202);
   font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.catalogo .catalogo__tarjetas .catalogo__tarjeta--gral img {
+  width: 60%;
+  margin: 0 auto;
+}
+.catalogo .catalogo__tarjetas .catalogo__tarjeta--gral .catalogo__tarjeta--cuerpo {
+  text-align: center;
 }
 .catalogo .catalogo__tarjetas .catalogo__tarjeta--gral .catalogo__tarjeta--botones {
   display: flex;
@@ -399,6 +405,7 @@ footer .footer__iconos .tiktok {
 
   .novedades {
     overflow: hidden;
+    max-width: 100%;
   }
   .novedades .novedades__tarjetas {
     width: 100%;
@@ -413,9 +420,29 @@ footer .footer__iconos .tiktok {
 
   .catalogo {
     overflow: hidden;
+    max-width: 100%;
   }
   .catalogo .catalogo__tarjetas {
     width: 100%;
+  }
+  .catalogo .catalogo__tarjetas .catalogo__tarjeta--gral {
+    overflow: hidden;
+  }
+  .catalogo .catalogo__tarjetas .catalogo__tarjeta--gral .comprar {
+    transform: translateY(300%);
+    transition: 1s;
+  }
+  .catalogo .catalogo__tarjetas .catalogo__tarjeta--gral .catalogo__tarjeta--botones {
+    transform: translateX(100%);
+    transition: 1s;
+  }
+  .catalogo .catalogo__tarjeta--gral:hover .comprar {
+    transform: translateY(0);
+    transition: 1s;
+  }
+  .catalogo .catalogo__tarjeta--gral:hover .catalogo__tarjeta--botones {
+    transform: translateX(0);
+    transition: 1s;
   }
 
   .contacto {
@@ -429,6 +456,40 @@ footer .footer__iconos .tiktok {
   }
   .contacto .contacto__links {
     border-bottom: 0;
+  }
+
+  footer .footer__iconos .face {
+    background-color: gray;
+  }
+  footer .footer__iconos .insta {
+    background-color: gray;
+  }
+  footer .footer__iconos .whats {
+    background-color: gray;
+  }
+  footer .footer__iconos .tiktok {
+    background-image: none;
+    background-color: gray;
+  }
+  footer :hover a {
+    filter: blur(2px);
+    transition: 1s;
+  }
+  footer a:hover {
+    transform: translateY(-3px) scale(1.5);
+    filter: none;
+  }
+  footer .face:hover {
+    background-color: #3b5999;
+  }
+  footer .insta:hover {
+    background-color: #e4405f;
+  }
+  footer .whats:hover {
+    background-color: #47c856;
+  }
+  footer .tiktok:hover {
+    background-image: linear-gradient(#25f4ee, #fe2c55);
   }
 }
 

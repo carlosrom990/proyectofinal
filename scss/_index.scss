@@ -38,6 +38,7 @@
 
 .novedades {
   width: 90%;
+  max-width: 600px;
   overflow: scroll;
   margin: 10px auto;
   .novedades__tarjetas {
@@ -47,7 +48,7 @@
       border: solid 1px black;
       border-radius: 2rem;
       width: 20%;
-      height: 390px;
+
       margin: 5px 20px;
       position: relative;
       padding-bottom: 20px;
@@ -88,7 +89,9 @@
 .comentariosGral {
   @include flex-center(row);
   flex-wrap: wrap;
-  width: 100%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   .cajacomentario {
     width: 90%;
     border: solid 1px black;
