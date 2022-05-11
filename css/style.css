@@ -15,8 +15,11 @@
   margin-bottom: 30px;
 }
 
-nav {
+body .navbar {
   background-color: rgb(254, 200, 154);
+  position: sticky;
+  top: 0;
+  z-index: 1000000;
 }
 
 .banner {
@@ -194,8 +197,11 @@ nav {
   margin-bottom: 30px;
 }
 
-nav {
+body .navbar {
   background-color: rgb(254, 200, 154);
+  position: sticky;
+  top: 0;
+  z-index: 1000000;
 }
 
 footer {
