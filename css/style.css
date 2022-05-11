@@ -463,7 +463,7 @@ footer .footer__iconos .tiktok {
     overflow: hidden;
   }
   .catalogo .catalogo__tarjetas .catalogo__tarjeta--gral .comprar {
-    transform: translateY(300%);
+    transform: translateY(600%);
     transition: 1s;
   }
   .catalogo .catalogo__tarjetas .catalogo__tarjeta--gral .catalogo__tarjeta--botones {
