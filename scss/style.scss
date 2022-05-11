@@ -22,6 +22,24 @@
     max-width: 100%;
     .novedades__tarjetas {
       width: 100%;
+      .novedades__tarjeta--gral {
+        overflow: hidden;
+        .novedades__botonCompra {
+          transform: translateY(250%);
+          transition: 1s;
+        }
+        .novedades__tarjeta--botones {
+          transform: translateX(100%);
+        }
+      }
+    }
+    .novedades__tarjeta--gral:hover .novedades__botonCompra {
+      transform: translateY(0);
+      transition: 1s;
+    }
+    .novedades__tarjeta--gral:hover .novedades__tarjeta--botones {
+      transform: translateY(0);
+      transition: 1s;
     }
   }
   .comentariosGral {

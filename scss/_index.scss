@@ -53,13 +53,20 @@
       position: relative;
       padding-bottom: 20px;
       padding-top: 20px;
-      @include flex-center(column);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       img {
         width: 70%;
         margin: 0 auto;
       }
       .novedades__tarjeta--cuerpo {
         text-align: center;
+        a {
+          @include boton;
+        }
+      }
+      .novedades__botonCompra {
         a {
           @include boton;
         }

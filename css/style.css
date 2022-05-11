@@ -88,7 +88,7 @@ nav {
   padding-top: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 .novedades .novedades__tarjetas .novedades__tarjeta--gral img {
   width: 70%;
@@ -98,6 +98,16 @@ nav {
   text-align: center;
 }
 .novedades .novedades__tarjetas .novedades__tarjeta--gral .novedades__tarjeta--cuerpo a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  padding: 10px;
+  border: solid 1px transparent;
+  border-radius: 10px;
+  background-color: rgb(245, 222, 202);
+  font-weight: bold;
+}
+.novedades .novedades__tarjetas .novedades__tarjeta--gral .novedades__botonCompra a {
   text-decoration: none;
   text-transform: uppercase;
   color: black;
@@ -409,6 +419,24 @@ footer .footer__iconos .tiktok {
   }
   .novedades .novedades__tarjetas {
     width: 100%;
+  }
+  .novedades .novedades__tarjetas .novedades__tarjeta--gral {
+    overflow: hidden;
+  }
+  .novedades .novedades__tarjetas .novedades__tarjeta--gral .novedades__botonCompra {
+    transform: translateY(250%);
+    transition: 1s;
+  }
+  .novedades .novedades__tarjetas .novedades__tarjeta--gral .novedades__tarjeta--botones {
+    transform: translateX(100%);
+  }
+  .novedades .novedades__tarjeta--gral:hover .novedades__botonCompra {
+    transform: translateY(0);
+    transition: 1s;
+  }
+  .novedades .novedades__tarjeta--gral:hover .novedades__tarjeta--botones {
+    transform: translateY(0);
+    transition: 1s;
   }
 
   .comentariosGral .cajacomentario {
