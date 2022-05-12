@@ -1,0 +1,10 @@
+en los archivos html agrege SEO con las siguientes modificaciones:
+-Description:
+	Emprendimiento de sublimacion e impresion 3d en diferentes objetos y prendas.
+-Keysword:
+	sublimacion, tazas, buzos, remeras, estampado, mates, gorro, almohadones, box, desayuno, boz desayuno
+-Title:
+	a cada html le puse el nombre de la marca y su correspondiente nombre de direccion por ejemplo "Tribu Urbana - Contato".
+-Encabezado:
+	se utiliza el h1 utilize el texto "Somos Tribu Urbana". Y al agregandole span el nombre de la marca para que se resalte de toda la oracion.
+	
