@@ -141,6 +141,23 @@ body .navbar {
   padding-top: 6px;
   text-align: center;
 }
+.novedades .novedades__tarjetas .novedades__tarjeta--gral .contador {
+  background-color: rgba(128, 128, 128, 0.692);
+  color: white;
+  position: absolute;
+  height: 30px;
+  width: 80px;
+  padding-top: 15px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-15px);
+  border-radius: 10px;
+}
+.novedades .novedades__tarjetas .novedades__tarjeta--gral .contador p {
+  display: inline-block;
+}
 
 .comentariosGral {
   display: flex;
@@ -407,6 +424,23 @@ footer .footer__iconos .tiktok {
   padding-top: 6px;
   text-align: center;
 }
+.catalogo .catalogo__tarjetas .catalogo__tarjeta--gral .contador {
+  background-color: rgba(128, 128, 128, 0.692);
+  color: white;
+  position: absolute;
+  height: 30px;
+  width: 80px;
+  padding-top: 15px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-15px);
+  border-radius: 10px;
+}
+.catalogo .catalogo__tarjetas .catalogo__tarjeta--gral .contador p {
+  display: inline-block;
+}
 
 @media screen and (min-width: 992px) {
   .banner .banner1 {
@@ -435,6 +469,9 @@ footer .footer__iconos .tiktok {
   }
   .novedades .novedades__tarjetas .novedades__tarjeta--gral .novedades__tarjeta--botones {
     transform: translateX(100%);
+  }
+  .novedades .novedades__tarjetas .novedades__tarjeta--gral .contador {
+    display: none;
   }
   .novedades .novedades__tarjeta--gral:hover .novedades__botonCompra {
     transform: translateY(0);
@@ -469,6 +506,9 @@ footer .footer__iconos .tiktok {
   .catalogo .catalogo__tarjetas .catalogo__tarjeta--gral .catalogo__tarjeta--botones {
     transform: translateX(100%);
     transition: 1s;
+  }
+  .catalogo .catalogo__tarjetas .catalogo__tarjeta--gral .contador {
+    display: none;
   }
   .catalogo .catalogo__tarjeta--gral:hover .comprar {
     transform: translateY(0);
