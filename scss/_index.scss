@@ -45,6 +45,8 @@
     width: 500%;
     @include flex-center(row);
     .novedades__tarjeta--gral {
+      padding-left: 10px;
+      padding-right: 10px;
       border: solid 1px black;
       border-radius: 2rem;
       width: 20%;
@@ -117,11 +119,13 @@
   margin-right: auto;
   .cajacomentario {
     width: 90%;
+    height: 250px;
     border: solid 1px black;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
     padding: 10px;
+    overflow: hidden;
     margin: 10px;
     justify-content: center;
     align-items: center;

@@ -82,6 +82,8 @@ body .navbar {
   justify-content: center;
 }
 .novedades .novedades__tarjetas .novedades__tarjeta--gral {
+  padding-left: 10px;
+  padding-right: 10px;
   border: solid 1px black;
   border-radius: 2rem;
   width: 20%;
@@ -170,11 +172,13 @@ body .navbar {
 }
 .comentariosGral .cajacomentario {
   width: 90%;
+  height: 250px;
   border: solid 1px black;
   border-radius: 20px;
   display: flex;
   flex-direction: row;
   padding: 10px;
+  overflow: hidden;
   margin: 10px;
   justify-content: center;
   align-items: center;
@@ -488,9 +492,11 @@ footer .footer__iconos .tiktok {
 
   .comentariosGral .cajacomentario {
     width: 22%;
+    height: 250px;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-top: 20px;
   }
 
   .catalogo {
