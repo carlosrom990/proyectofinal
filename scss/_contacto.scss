@@ -12,6 +12,10 @@
     }
     p {
       display: inline-block;
+      a {
+        text-transform: uppercase;
+        font-weight: bold;
+      }
     }
     .contacto__redes {
       @include flex-center(row);

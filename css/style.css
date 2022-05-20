@@ -283,6 +283,10 @@ footer .footer__iconos .tiktok {
 .contacto .contacto__links p {
   display: inline-block;
 }
+.contacto .contacto__links p a {
+  text-transform: uppercase;
+  font-weight: bold;
+}
 .contacto .contacto__links .contacto__redes {
   display: flex;
   flex-direction: row;
