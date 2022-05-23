@@ -474,7 +474,7 @@ footer .footer__iconos .tiktok {
     overflow: hidden;
   }
   .novedades .novedades__tarjetas .novedades__tarjeta--gral .novedades__botonCompra {
-    transform: translateY(250%);
+    transform: translateY(400%);
     transition: 1s;
   }
   .novedades .novedades__tarjetas .novedades__tarjeta--gral .novedades__tarjeta--botones {
