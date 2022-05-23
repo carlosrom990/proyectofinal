@@ -279,6 +279,7 @@ footer .footer__iconos .tiktok {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 10px;
   border-bottom: solid 1px rgb(156, 156, 156);
 }
 .contacto .contacto__links h2 {
@@ -327,6 +328,7 @@ footer .footer__iconos .tiktok {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 10px;
 }
 .contacto .contacto__form form {
   display: flex;
@@ -540,6 +542,9 @@ footer .footer__iconos .tiktok {
   }
   .contacto .contacto__links {
     border-bottom: 0;
+  }
+  .contacto .contacto__form {
+    padding-top: 70px;
   }
 
   footer .footer__iconos .face {
